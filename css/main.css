@@ -1,0 +1,99 @@
+:root {
+  --color-purple: #632ce7;
+  --color-black: black;
+}
+
+/* ---->General Styles */
+a {
+  color: inherit;
+}
+
+.container > .row {
+  margin-bottom: 5rem;
+}
+
+hr {
+  margin-bottom: 3rem;
+}
+
+body{
+  margin-top: 5rem;
+}
+
+/* ---->Navbar */
+
+.navbar-brand>img {
+  width: 55px;
+}
+
+.navbar-main .active {
+  text-decoration: underline wavy var(--color-purple);
+  text-underline-offset: 9px;
+}
+
+/*----->Header*/
+
+.icons-social-media>a {
+  --size: 40px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  transition: 0.5s filter;
+}
+
+.icons-social-media>a:hover {
+  filter: opacity(0.5);
+}
+
+.photo-frame {
+  font-size: 20px;
+}
+
+.photo-frame::before,
+.photo-frame::after {
+  content: "";
+  display: block;
+  width: var(--box-size);
+  height: var(--box-size);
+  position: absolute;
+  z-index: -10;
+  animation: turnZ 7s linear alternate-reverse;
+}
+
+.photo-frame::before {
+  --box-size: 3em;
+  background-image: radial-gradient(var(--color-purple) 50%, var(--color-black)50%);
+  top: calc(99% - (var(--box-size) / 2));
+  right: calc(99% - (var(--box-size) / 2));
+}
+
+.header-main {
+  height: initial;
+}
+
+/*----->Service*/
+
+.icon-service {
+  --box-size: 70px;
+  width: var(--box-size);
+  height: var(--box-size);
+  padding: 10px;
+}
+
+
+@media screen and (min-width: 1024px) {
+
+  body{
+    margin-top: 0px;
+  }
+
+  .header-main{
+    height: 100vh;
+  }
+
+  
+}
