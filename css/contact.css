@@ -1,131 +1,111 @@
-:root {
-  --color-purple: #632ce7;
-  --color-black: black;
-  --primary: #555BFF;
-  --secondary: #22D2A0;
-  --background: white;
-  --green: #1FC11B;
-  --yellow: #FFD913;
-  --orange: #FF9C55;
-  --red: #FF5555;
-}
-
-/* ---->General Styles */
-.container > .row {
-  margin-bottom: 5rem;
-}
-
-body{
-  margin-top: 5rem;
-  align-items: center;
-}
-
-*{
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-}
-
-/* ---->Navbar */
-
-.navbar-brand>img {
-  width: 55px;
-}
-
-.navbar-main .active {
-  text-decoration: underline wavy var(--color-purple);
-  text-underline-offset: 9px;
-}
-
-/*----->Header*/
-
-.header-main {
-  height: initial;
-}
-
-/*----->Form*/
-.container-form{
-  position: relative;
-  width: 100%;
-  height: initial;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5px 8px;
-  }
-  
-.contact-box{
-  max-width: 850px;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: #fff;
-  box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
-  grid-template-columns: 1fr;
-}
-  
-.left{
-  background: url("/Portfolio/img/illustration.png") no-repeat center;
-  background-size: cover;
-  height: 200px;
-}
-
-.right{
-  padding: 25px 40px;
-}
-
-.field{
-  width: 100%;
-  border: 2px solid rgba(0, 0, 0, 0);
-  outline: none;
-  background-color: rgba(230, 230, 230, 0.6);
-  padding: 0.5rem 1rem;
-  font-size: 1.1rem;
-  margin-bottom: 22px;
-  transition: .3s;
-}
-  
-.field:hover{
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-textarea{
-  min-height: 150px;
-}
-
-
-/*---- BUTTON*/
-
-.btn {
-  --border-radius: 15px;
-  --border-width: 4px;
-  appearance: none;
-  position: relative;
-  width: 100%;
-  padding: 1em 2em;
-  color: rgb(15, 15, 15);;
-  z-index: 2;
-  font-size: 18px;
-  font-weight: 500;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  transition: .3s;
- }
- 
-.btn::after {
-  --m-i: linear-gradient(#000, #000);
-  --m-o: content-box, padding-box;
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  padding: var(--border-width);
-  border-radius: var(--border-radius);
-  background-image: conic-gradient(
+:root 
+	--color-purple: #632ce7 
+	--color-black: black 
+	--primary: #555BFF 
+	--secondary: #22D2A0 
+	--background: white 
+	--green: #1FC11B 
+	--yellow: #FFD913 
+	--orange: #FF9C55 
+	--red: #FF5555 
+.container 
+	& > .row 
+		margin-bottom: 5rem 
+body 
+	margin-top: 5rem 
+	align-items: center 
+* 
+	padding: 0 
+	margin: 0 
+	box-sizing: border-box 
+.navbar-brand 
+	& > img 
+		width: 55px 
+.navbar-main 
+	.active 
+		text-decoration: underline wavy var(--color-purple) 
+		text-underline-offset: 9px 
+.header-main 
+	height: initial 
+	height: 100vh 
+.container-form 
+	position: relative 
+	width: 100% 
+	height: initial 
+	display: flex 
+	justify-content: center 
+	align-items: center 
+	padding: 5px 8px 
+.contact-box 
+	max-width: 850px 
+	display: grid 
+	justify-content: center 
+	align-items: center 
+	text-align: center 
+	background-color: #fff 
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19) 
+	grid-template-columns: 1fr 
+	grid-template-columns: repeat(2, 1fr) 
+.left 
+	background: url("/img/Illustration.png") no-repeat center 
+	background-size: cover 
+	height: 200px 
+	height: 550px 
+.right 
+	padding: 25px 40px 
+.field 
+	width: 100% 
+	border: 2px solid rgba(0, 0, 0, 0) 
+	outline: none 
+	background-color: rgba(230, 230, 230, 0.6) 
+	padding: 0.5rem 1rem 
+	font-size: 1.1rem 
+	margin-bottom: 22px 
+	transition: .3s 
+	width: 100% 
+	border: 2px solid rgba(0, 0, 0, 0) 
+	outline: none 
+	background-color: rgba(230, 230, 230, 0.6) 
+	padding: 0.5rem 1rem 
+	font-size: 1.1rem 
+	margin-bottom: 22px 
+	transition: .3s 
+	&:hover 
+		background-color: rgba(0, 0, 0, 0.1) 
+		background-color: rgba(0, 0, 0, 0.1) 
+	&:focus 
+		border: 2px solid rgba(30,85,250,0.47) 
+		background-color: #fff 
+textarea 
+	min-height: 150px 
+	min-height: 150px 
+.btn 
+	--border-radius: 15px 
+	--border-width: 4px 
+	appearance: none 
+	position: relative 
+	width: 100% 
+	padding: 1em 2em 
+	color: rgb(15, 15, 15) 
+	z-index: 2 
+	font-size: 18px 
+	font-weight: 500 
+	border: none 
+	outline: none 
+	cursor: pointer 
+	transition: .3s 
+	&::after 
+		--m-i: linear-gradient(#000, #000) 
+		--m-o: content-box, padding-box 
+		content: "" 
+		position: absolute 
+		left: 0 
+		top: 0 
+		width: 100% 
+		height: 100% 
+		padding: var(--border-width) 
+		border-radius: var(--border-radius) 
+		background-image: conic-gradient(
      #488cfb,
      #29dbbc,
      #ddf505,
@@ -133,87 +113,42 @@ textarea{
      #e440bb,
      #655adc,
      #488cfb
-   );
-  -webkit-mask-image: var(--m-i), var(--m-i);
-  mask-image: var(--m-i), var(--m-i);
-  -webkit-mask-origin: var(--m-o);
-  mask-origin: var(--m-o);
-  -webkit-mask-clip: var(--m-o);
-  mask-composite: exclude;
-  -webkit-mask-composite: destination-out;
-  filter: hue-rotate(0);
-  animation: rotate-hue linear 500ms infinite;
-  animation-play-state: paused;
+   ) 
+		-webkit-mask-image: var(--m-i), var(--m-i) 
+		mask-image: var(--m-i), var(--m-i) 
+		-webkit-mask-origin: var(--m-o) 
+		mask-origin: var(--m-o) 
+		-webkit-mask-clip: var(--m-o) 
+		mask-composite: exclude 
+		-webkit-mask-composite: destination-out 
+		filter: hue-rotate(0) 
+		animation: rotate-hue linear 500ms infinite 
+		animation-play-state: paused 
+	&:hover 
+		&::after 
+			animation-play-state: running 
+	&:active 
+		--border-width: 5px 
+@keyframes 
+	rotate-hue 
+		to {
+   filter: hue-rotate(1turn) 
 }
- 
-.btn:hover::after {
- animation-play-state: running;
-}
- 
-@keyframes rotate-hue {
-  to {
-   filter: hue-rotate(1turn);
-  }
-}
- 
 .btn,
-.btn::after {
- box-sizing: border-box;
-}
-
-.btn:active {
- --border-width: 5px;
-}
-.field:focus{
-  border: 2px solid rgba(30,85,250,0.47);
-  background-color: #fff;
-}
-
-footer{
-  align-items: center;
-  margin-top: 3rem;
-  color: var(--color-purple);
- }
-
-h3{
-  font-size: 15px;
-  text-align: center;
- }
-
- @media screen and (min-width: 765px) {
-
-  body{
-    margin-top: 0px;
-  }
-
-  .header-main{
-    height: 100vh;
-  }
-
-  .contact-box{
-  grid-template-columns: repeat(2, 1fr);
-	}
-	.left{
-		height: 550px; 
-  }
-
-  .field{
-    width: 100%;
-    border: 2px solid rgba(0, 0, 0, 0);
-    outline: none;
-    background-color: rgba(230, 230, 230, 0.6);
-    padding: 0.5rem 1rem;
-    font-size: 1.1rem;
-    margin-bottom: 22px;
-    transition: .3s;
-  }
-    
-  .field:hover{
-    background-color: rgba(0, 0, 0, 0.1);
-  }
-  
-  textarea{
-    min-height: 150px;
-  }
-
-}
+.btn::after 
+	box-sizing: border-box 
+footer 
+	align-items: center 
+	margin-top: 3rem 
+	color: var(--color-purple) 
+h3 
+	font-size: 15px 
+	text-align: center 
+@media 
+	screen 
+		and 
+			(min-width 
+				&: 
+					765px) 
+						body{
+    margin-top: 0px 
