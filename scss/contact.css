@@ -53,7 +53,7 @@ body {
 }
 
 .left {
-  background: url("/Portfolio/img/Illustration.png") no-repeat center;
+  background: url("/Portfolio-main/img/Illustration.png") no-repeat center;
   background-size: cover;
   height: 200px;
 }
