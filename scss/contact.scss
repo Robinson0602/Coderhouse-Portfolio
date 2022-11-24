@@ -65,10 +65,17 @@
     grid-template-columns: 1fr;
   }
     
-  .left{
-    background: url("/Portfolio/img/Illustration.png") no-repeat center;
+  .left {
+    background: url("https://www.creativeboom.com/uploads/articles/48/48232bd080efd8bff96177b78e2d2bdd7b8a2bec_810.jpg") no-repeat center;
     background-size: cover;
     height: 200px;
+    transition: 1s filter;
+  }
+  
+  .left:hover {
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    -webkit-transition: all .8s ease-in-out; 
   }
   
   .right{
