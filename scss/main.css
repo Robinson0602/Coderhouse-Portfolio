@@ -44,7 +44,7 @@ body {
   border-radius: 10px;
   transition: 0.5s filter;
 }
-.photo :hover {
+.photo:hover {
   filter: blur(5px);
 }
 
