@@ -58,11 +58,10 @@ body {
   height: 200px;
   transition: 1s filter;
 }
-
 .left:hover {
   filter: gray;
   -webkit-filter: grayscale(1);
-  -webkit-transition: all .8s ease-in-out; 
+  -webkit-transition: all 0.8s ease-in-out;
 }
 
 .right {
@@ -79,7 +78,6 @@ body {
   margin-bottom: 22px;
   transition: 0.3s;
 }
-
 .field:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }

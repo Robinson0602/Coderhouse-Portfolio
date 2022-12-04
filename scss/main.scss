@@ -37,10 +37,10 @@
     text-decoration-color: $color-purple;
     text-underline-offset: 9px;
   }
-  
-  /*----->Header*/
-  
-  .icons-social-media>a {
+
+  .icons-social-media {
+    
+    a {
     width: $size;
     height: $size;
     border-radius: 50%;
@@ -49,20 +49,21 @@
     align-items: center;
     background-color: $color-black;
     transition: 0.5s filter;
+    }
+
+    a:hover{
+      filter: opacity(0.5);
+    }
   }
   
-  .icons-social-media>a:hover {
-    filter: opacity(0.5);
-  }
-  
-  .photo {
+  .photo{
     border-radius: 10px;
     transition: 0.5s filter;
-  }
-  
-  .photo:hover {
-    filter: blur(5px);;
-  
+    
+    :hover {
+      filter: blur(5px);;
+    }
+
   }
   
   .header-main {
